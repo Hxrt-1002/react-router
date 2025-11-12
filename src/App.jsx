@@ -1,13 +1,21 @@
 import React from 'react'
+import { Route, Router, Routes } from 'react-router-dom'
 
 const App = () => {
   return (
     <>
-      <nav className='bg-gray-800 p-4'>
-        <ul className='flex space-x-4'>
+      <Router>
+        <nav className='bg-gray-800 p-4'>
+          <ul className='flex space-x-4'>
+            <li>
 
-        </ul>
-      </nav>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route />
+        </Routes>
+      </Router>
     </>
   )
 }
